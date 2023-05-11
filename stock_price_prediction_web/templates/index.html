@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+       body{ 
+        background-color: black;
+        text-align: center;
+        background-image: url(StockMarket.png);
+        background-color:none;
+        background-repeat:no-repeat;
+        background-size: 100%;
+       }
+      
+       .as{
+        background-color:black;
+        width: 300px;
+        border: 15px solid grey;
+        padding: 50px;
+        margin-top: 5%;
+        margin-left: 35%;
+       }
+       select {
+        width: 250px;
+        margin: 10px;
+        height: 60px;
+    }
+      h1{
+       
+        margin-top: 5%;
+      }
+    </style>
+</head>
+<body >
+    <h1 style="color:white;">Select the stock which you want to predict  📈📉📊</h1>
+<form action="/prediction" method="post" class="as">
+    <select name="stocks" id="stock">
+        <option value="NETFLIX">NETFLIX</option>
+        <option value="Google">Google</option>
+        <option value="Amazon">Amazon</option>
+    </select><br><br>
+    <input type="submit" name="submit" width="100px" height="30px">
+</form>
+
+</body>
+</html>
